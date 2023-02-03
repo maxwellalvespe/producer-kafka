@@ -18,7 +18,7 @@ public class ProducerService {
     public void produzirMenssagem(String value){
 
         log.info("producer message..");
-        template.send("max-topic",value)
+        template.send("max-topic",value);
         log.info("finally message..");
     }
 }
